@@ -253,6 +253,11 @@ img {
   cursor: pointer;
 }
 
+.nav .nav_button {
+  background-color: var(--title-color);
+  border: none;
+}
+
 /* Show menu */
 .show-menu {
   right: 0;
@@ -265,10 +270,106 @@ img {
 /**********************/
 /* HOME */
 /**********************/
+.home {
+  position: relative;
+  padding-bottom: 0;
+}
+
+.home_container {
+  padding-top: 4rem;
+  row-gap: 3rem;
+}
+
+.home_data {
+  text-align: center;
+}
+
+.home_subtitle {
+  font-size: var(--bigger-font-size);
+  -webkit-text-stroke: 1px var(--title-color);
+  color: transparent;
+}
+
+.home_title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-black);
+  margin: 0.5rem;
+}
+
+.home_subtitle,
+.home_title {
+  letter-spacing: 1.5px;
+}
+
+.home_description {
+  margin-bottom: 2.5rem;
+}
+
+.home_triangle {
+  height: 325px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.home_triangle-1 {
+  width: 105px;
+  background-color: var(--first-color);
+}
+
+.home_triangle-2 {
+  width: 205px;
+  background-color: var(--first-color-alt);
+}
+
+.home_triangle-3 {
+  width: 305px;
+  background-color: var(--first-color-dark);
+}
+
+.home_img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 350px;
+  margin: 0 auto;
+}
 
 /**********************/
 /* BUTTONS */
 /**********************/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  padding: 18px 32px;
+  border: 2px solid var(--first-color-light);
+  color: var(--title-color-black);
+  font-weight: var(--font-bold);
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 12px;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button i {
+  font-size: 1.25rem;
+  transition: transform 0.3s;
+}
+
+.button_flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+
+.button_flex:hover i {
+  transform: translateX(0.25rem);
+}
 
 /**********************/
 /* LOGOS */
