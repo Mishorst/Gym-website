@@ -394,7 +394,54 @@
       </section>
 
       <!--==================== CALCULATE ====================-->
-      <section class="calculate section"></section>
+      <section class="calculate section">
+        <div class="cal_container container gird">
+          <div class="cal_content">
+            <div class="section_titles">
+              <h1 class="section_title-border">CALCULATE</h1>
+              <h1 class="section_title">YOUR BMI</h1>
+            </div>
+
+            <p class="cal_description">
+              The body mass index (BMI) calculator calculates body mass index
+              from your weight and height.
+            </p>
+
+            <form action="" class="cal_form" id="cal-form">
+              <div class="cal_box">
+                <input
+                  type="number"
+                  placeholder="Height"
+                  class="cal_input"
+                  id="cal-cm"
+                />
+                <label for="" class="cal_label">cm</label>
+              </div>
+
+              <div class="cal_box">
+                <input
+                  type="number"
+                  placeholder="Weight"
+                  class="cal_input"
+                  id="cal-kg"
+                />
+                <label for="" class="cal_label">kg</label>
+              </div>
+
+              <button type="submit" class="button button_flex">
+                Calculate Now <i class="ri-arrow-right-line"></i>
+              </button>
+            </form>
+
+            <p class="cal_message" id="cal-message"></p>
+          </div>
+          <img
+            src="assets/calculate/calculate-img.png"
+            alt="calculate image"
+            class="cal_img"
+          />
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
