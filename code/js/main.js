@@ -76,6 +76,18 @@ const scrollUp = () => {
 window.addEventListener("scroll", scrollUp);
 
 /////////////////   SCROLL REVEAL ANIMATION  ///////////////////
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+});
+
+sr.reveal(`.home_data, .footer_container, .footer_group`);
+sr.reveal(`.home_img`, { delay: 700, origin: "bottom" });
+sr.reveal(`.logos_img, .program_card, .pricing_card`, { interval: 100 });
+sr.reveal(`.choose_img, .cal_content`, { origin: "left" });
+sr.reveal(`.choose_content, .cal_img`, { origin: "right" });
 
 /////////////////   CALCULATE JS   ///////////////////
 const calculateForm = document.getElementById("cal-form"),
